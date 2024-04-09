@@ -64,7 +64,7 @@ class Agent():
         return processed_state
 
     def act(self, observation):
-        if np.all(observation == self.start_frame) and self.counter > 100:
+        if np.all(observation == self.start_frame) and self.counter > 10:
             self.counter = 0
             self.frames.clear()
         
